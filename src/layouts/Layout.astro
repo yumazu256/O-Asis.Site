@@ -1,14 +1,15 @@
 ---
 interface Props {
-    title?:string
+    title?:string,
+    en?:boolean
 }
-const { title } = Astro.props
+const { title,en } = Astro.props
 import Header from '../components/Header.astro'
 import Footer from '../components/Footer.astro'
 import { ViewTransitions } from 'astro:transitions'
 import Icon from '../assets/Icon.png';
 ---
-<html lang="ja">
+<html lang={en?"en":"ja"}>
     <head>
         <meta charset="UTF-8" />
         <meta name="description" content={`O-Asis`}/>
@@ -18,7 +19,7 @@ import Icon from '../assets/Icon.png';
         <ViewTransitions fallback='swap'/>
     </head>
     <body class="bg-black text-white text-2xl select-none pt-28 overflow-x-hidden">
-        <Header />
+        <Header en={en}/>
         <div class="w-full p-2">
             <slot/>
         </div>
