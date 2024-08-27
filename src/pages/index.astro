@@ -5,10 +5,14 @@ import BG from '../assets/BG.png'
 
 <Layout>
     <div class=`w-full h-[100svh] flex justify-center items-center`>
-        <img src={BG.src} class="opacity-70 brightness-125 animate-pulse pointer-events-none blur-3xl">
+        <span class="animate-[BG-ANIM-OUT_2s]">
+            <img src={BG.src} class="brightness-125 animate-[BG-ANIM_4s_infinite] pointer-events-none blur-3xl">
+        </span>
         <div class="text-center absolute">
-            <div class="text-6xl block mb-5">もっと自在に。もっと楽しく。</div>
-            <div class="text-2xl block text-zinc-400">
+            <div class="text-6xl mb-5 flex justify-center items-center overflow-hidden animate-flow-in-bottom-1">
+                    もっと自在に。もっと楽しく。
+            </div>
+            <div class="text-2xl block text-zinc-400 animate-flow-in-bottom-2">
                 あなたのための、あなただけのアシスタントです。<br>
                 いつものあれこれ、お手伝いします。
             </div>
