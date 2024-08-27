@@ -14,7 +14,7 @@ const { en } = Astro.props
 ---
 <div class="w-full h-24 fixed top-0 bg-black bg-opacity-30 backdrop-blur-md -mx-2 flex z-50">
     <a href={en?"/en/":"/"} class={"outline-none focus:bg-white/20 focus:rounded-md focus:hover:bg-transparent duration-200 "+(Astro.url.pathname=="/" ? "brightness-110":"")}>
-        <img src={Logo.src} class="h-full cursor-pointer" alt="O-Asis" transition:persist>
+        <img src={Logo.src} class="h-full pointer-events-none" alt="O-Asis" transition:persist>
     </a>
     <div class="w-10/12 grid-cols-6 grid">
         {Pages.map(e => 
