@@ -46,11 +46,11 @@ export default {
 				"BG-ANIM-OUT": {
 					"0%": {
 						opacity: "0.2",
-						scale:"0.5"
+						scale:"0.5",
 					},
 					to: {
 						opacity: "1",
-						scale:"1"
+						scale:"1",
 					},
 				},
 			}
