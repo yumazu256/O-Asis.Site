@@ -20,11 +20,11 @@ export default {
 				},
 				"flow-in-bottom-2": {
 					"0%": {
-						translate: "0px 14px",
+						translate: "0px 20px",
 						opacity: "0",
 					},
 					"30%": {
-						translate: "0px 14px",
+						translate: "0px 20px",
 						opacity: "0",
 					},
 					to: {
@@ -45,10 +45,12 @@ export default {
 				},
 				"BG-ANIM-OUT": {
 					"0%": {
-						opacity: "0",
+						opacity: "0.2",
+						scale:"0.5"
 					},
 					to: {
 						opacity: "1",
+						scale:"1"
 					},
 				},
 			}
